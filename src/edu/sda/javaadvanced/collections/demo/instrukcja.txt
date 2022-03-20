@@ -1,0 +1,22 @@
+Napisać klasę Human
+
+ma ona mieć
+imię
+nazwisko
+płeć (enum)
+wiek
+dodać equals i HashCode
+dodać porównanie po nazwisku
+
+w klasie HumanDemo
+zrobić listę ludzi (ArrayList)
+zrobić set ludzi (HashSet)
+
+Dorabiamy zewnętrzne komparatory:
+1. szeregujący po nazwisku i imieniu (od Z do A)
+2. szeregujący po wieku i imieniu
+3. szeregujący po płci i wieku (malejąco)
+
+wyświetlić efekt działania komparatorów
+
+

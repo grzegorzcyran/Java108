@@ -32,6 +32,31 @@ public class Car implements Comparable<Car> {
         return maxSpeed;
     }
 
+    /**
+     * 1. Metoda "toString" nie powinna być wykorzystywana "biznesowo" czyli do wyświetlania danych
+     * w aplikacji
+     * 2. Jeśli potrzebujemy wyświetlić dane to tworzymy dedykowane metody lub składamy "w locie"
+     */
+    public String getCarInfo() {
+        /**
+         * String vs StringBuilder vs StringBuffer
+         * 1. String odkłada wszystkie napisy na StringPool i NIE SĄ ONE USUWANE przez GC (garbage collector)
+         * 2. StringBuffer i StringBuilder "składają" napis i dopiero jak jest gotowy , zamieniony "toString"
+         * to wtedy ten gotowy ląduje na StringPool, a wcześniejsze są czyszczone
+         * 3. StringBuffer działa od początku Javy (1.0) i jest bezpieczny w aplikacjach wielowątkowych
+         * ale przez to wolny
+         * 4 StringBuilder działa od Javy 1.5, jest przeznaczony do aplikacji 1-wątkowych, ale dzięki temu
+         * szybszy
+         */
+        return new StringBuilder("Car name : ")
+                .append(name)
+                .append(" , engine : ")
+                .append(engine)
+                .append(" , max speed : ")
+                .append(maxSpeed)
+                .toString();
+    }
+
     @Override
     public String toString() {
         return "Car{" +
