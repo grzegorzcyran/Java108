@@ -19,6 +19,18 @@ public class Human implements Comparable<Human> {
         return surname;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
