@@ -91,6 +91,16 @@ public class ListDemo {
             System.out.println(car);
         }
 
+        if(carList.contains(car2)) {
+            System.out.println("Lista zawiera car2");
+        }
 
+        System.out.println("Drukujemy hashcode obiektów z listy");
+        carList.add(car1);
+        carList.add(car3);
+        carList.add(car4);
+        for (Car car : carList) {
+            System.out.println(car.getName() + " " + car.hashCode());
+        }
     }
 }
