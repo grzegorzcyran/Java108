@@ -19,4 +19,10 @@ Dorabiamy zewnętrzne komparatory:
 
 wyświetlić efekt działania komparatorów
 
+dołożyć drukowanie listy ludzi w osobnym wątku - np klasa HumanReportPrinter
+lista ma zawierać:
+1. Liczbę porządkową
+2. Nazwisko i imię
+3. Płeć
+Sugerowane aby nazwisko, imię i płeć zwracać dedykowaną metodą
 
