@@ -8,6 +8,10 @@ public class Bird implements Movable {
         this.birdName = birdName;
     }
 
+    public String getBirdName() {
+        return birdName;
+    }
+
     @Override
     public String move() {
         return birdName + " is flying!!!";

@@ -6,8 +6,13 @@ public class Traveller implements Movable {
     private String surName;
 
     public Traveller(String name, String surName) {
+        System.out.println("Tworzymy nowy obiekt z imieniem: " + name + " i nazwiskiem: " + surName);
         this.name = name;
         this.surName = surName;
+    }
+
+    public String getSurName() {
+        return surName;
     }
 
     //metoda abstrakcyjna w interfejsie, MUSIMY ją nadpisać
