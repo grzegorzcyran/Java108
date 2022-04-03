@@ -9,6 +9,7 @@ public class Human implements Comparable<Human> {
     private int age;
 
     public Human(String name, String surName, int age) {
+        System.out.println("Konstruktor dla name =" + name + ", surname=" + surName);
         this.name = name;
         this.surName = surName;
         this.age = age;
@@ -24,6 +25,17 @@ public class Human implements Comparable<Human> {
 
     public int getAge() {
         return age;
+    }
+
+    public void printHumanInfo() {
+        System.out.println(getHumanInfo());
+    }
+
+    public String getHumanInfo() {
+        return new StringBuilder("Human: ").append(surName)
+                .append(" ").append(name)
+                .append(", age=").append(age)
+                .toString();
     }
 
     @Override
