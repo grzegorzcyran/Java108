@@ -1,0 +1,23 @@
+Napisać program do ewidencji pracy warsztatu samochodowego
+
+-spis dostępnych usług (ENUM)
+
+Klient:
+imię, nazwisko, samochody, wykonane usługi
+
+Samochód
+nazwa, silnik, rocznik
+
+Usługa
+typ usługi (z tego enuma wyżej), koszt
+
+
+--ewidencja klientów
+--ewidencja wykonanych usług
+
+--dokładanie nowego klienta
+--wykonywanie usługi dla klienta
+
+--raport usług - ile razy wykonane, ile z tego kasy
+--raport klientów - ile samochodów obsłużonych dla danego klienta
+--raport kasy od klienta - ile który klient zostawił kasy za usługi w warsztacie
